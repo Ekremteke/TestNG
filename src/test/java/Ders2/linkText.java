@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class className {
+public class linkText {
     static WebDriver driver;
 
     @Test

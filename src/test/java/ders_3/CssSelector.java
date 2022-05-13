@@ -33,5 +33,15 @@ public class CssSelector {
         WebElement sifre= driver.findElement(By.cssSelector("input[type='password']"));
         sifre.sendKeys("3427sjsjdskl"+ Keys.ENTER);
 
+/*
+  1-  "tagName[attribute name='value']"
+
+  2-  "tagName#id value"  yada "id value"  => sadece id value'si icin gecerlidir
+
+  3-  "tagName.class value"  yada ".class value"  => yanlizca class value ile calisir.
+
+
+ */
+
     }
 }

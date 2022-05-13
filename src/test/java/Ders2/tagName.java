@@ -35,7 +35,7 @@ public class tagName {
         List<WebElement> listem=driver.findElements(By.tagName("a"));
 
         for (WebElement w:listem){
-//            System.out.println(""+ listem.getText());
+         System.out.println("tagname"+ w.getText());
      }
 
 

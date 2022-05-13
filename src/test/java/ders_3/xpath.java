@@ -27,11 +27,20 @@ public class xpath {
         WebElement pass=driver.findElement(By.xpath("//input[@type='password']"));
         pass.sendKeys("Temp@2020");
 
-        WebElement login=driver.findElement(By.xpath("//button[@id='tdb1']"));
-        login.click();
-
+//        WebElement login=driver.findElement(By.xpath("//button[@id='tdb1']"));
+//        login.click();
 
     }
 
+/*
+        //tagName[@attirbute='value']     ==> butun araclari yaziyoruz.
+        (//input[@type='text'])[2]         ==> Ayni ozelliklere sahip arac(tagName,Attirbute,text..)
+        //input[@type='password' or @name='password']    =>bir tanesinin dogru olmasi yetiyor.
+         //input[@type='password' and @name='password']
+         //*[@type='text']      =>      tagName'i ne olursa olsun,attribute(type) ve value(text)'e gore buluyoruz
+        (//*[.='Login'])[3]     =>       icerdigi yazi Login olan tum webElementlere ulasmak icin kullaniyoruz
+        (//span[.='Login'])[2]   =>      icedigi yazi Login olan ve tagNem'i span oln tum WebElementleri bulmamizi saglar
+        //*[contains(text(),'Catalog')]   => icerisinde  "Catalog" gecen tum elementleri bulmamizi saglar
+ */
 
 }

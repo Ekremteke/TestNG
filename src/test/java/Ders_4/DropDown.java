@@ -10,11 +10,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import javax.sound.midi.Soundbank;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class dropDown {
+public class DropDown {
     static WebDriver driver;
 
     @BeforeClass

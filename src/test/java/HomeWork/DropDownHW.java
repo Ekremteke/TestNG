@@ -38,21 +38,17 @@ public class DropDownHW {
 
             select.selectByVisibleText("Software");
 
-            Thread.sleep(5000);
+            Thread.sleep(2000);
 
-            WebElement java =driver.findElement(By.className("nav-search-field"));
+            WebElement java =driver.findElement(By.id("twotabsearchtextbox"));
+
+            Thread.sleep(2000);
+
             java.sendKeys("java" + Keys.ENTER);
 
             System.out.println("--------------");
 
-            List<WebElement> liste=select.getOptions();
-
-            for(WebElement  w:liste){
-                System.out.println(w.getText());
-            }
-
-            int toplamSecenekSayisi=liste.size();
-            System.out.println("Toplam secim sayisi ==> "+ toplamSecenekSayisi);
+            WebElement sonuc = driver.findElement(By.className("sg-col-inner"));
 
         }
     }

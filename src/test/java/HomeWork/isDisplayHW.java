@@ -1,4 +1,4 @@
-package Ders_4;
+package HomeWork;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

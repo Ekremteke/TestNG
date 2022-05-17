@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class dropDown {
@@ -45,8 +47,18 @@ public class dropDown {
        select.selectByValue("search-alias=computers-intl-ship"); // computersa gidiyor
 
         WebElement election = select.getFirstSelectedOption();
-        System.out.println("son secili element==> " + election.getText());
+        System.out.println("son secili eleman==> " + election.getText());
 
+        System.out.println("=========");
+
+        List<WebElement> list = select.getOptions();
+
+        for (WebElement w:list){
+            System.out.println(w.getText());
+        }
+
+        int toplamSecenekSayisi=list.size();
+        System.out.println("Toplam secim sayisi ==> "+ toplamSecenekSayisi);
 
     }
 }
